@@ -1,4 +1,6 @@
-# Events
+# Blocks
+
+## Events
 
 ```
 on start {}
@@ -6,7 +8,7 @@ on timer([1sec|2sec|3sec|4sec|5sec|10sec|20sec|30sec|random]) {}
 on buttonPressed([a|b|up|down|left|right]) {}
 ```
 ```
-knight<instance>
+[knight|archer|pawn|goblin]<instance>:
 on spawned {}
 on collideWith([knight|archer|pawn|goblin|character|wall|anything])<other> {}
 on near([knight|archer|pawn|goblin|character|wall|anything])<other> {}
@@ -14,7 +16,7 @@ on attackedBy([knight|archer|pawn|goblin|character|anything])<other> {}
 on steppedOver([tile1|tile2]) {}
 ```
 
-# Commands
+## Commands
 
 ```
 win
@@ -46,7 +48,7 @@ wait([1sec|2sec|3sec|4sec|5sec|10sec|20sec|30sec|random])
 <instance>.destroy
 ```
 
-# Instances
+## Instances
 
 ```
 random([knight|archer|pawn|goblin|character|wall|anything])
@@ -56,4 +58,19 @@ closest([knight|archer|pawn|goblin|character])To(<object>)
 closest([knight|archer|pawn|goblin|character])To([topLeft|topCenter|topRight|centerLeft|center|centerRight|bottomLeft|bottomCenter|bottomRight])
 furthest([knight|archer|pawn|goblin|character])From(<object>)
 furthest([knight|archer|pawn|goblin|character])From([topLeft|topCenter|topRight|centerLeft|center|centerRight|bottomLeft|bottomCenter|bottomRight])
+```
+
+# Mini Games
+
+## Space Invaders
+
+```
+level has goblins in one row on top from left to right and an archer on the bottom
+bottom area tiles are ground with village
+archer can move right and left with buttons and attack on button up
+golbins on spawn in loop move left left left bottom right right right bottom
+goblin on attacked is destroyed
+if number of goblin is 0 win
+if goblin collided with archer lose
+if golbin stepped over ground lose
 ```
