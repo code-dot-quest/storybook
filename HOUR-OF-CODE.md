@@ -11,9 +11,9 @@ Purpose: In one hour, take a person without any knowledge and show them the basi
 5. Loops - Complex loop
 6. Conditionals - Simple conditional
 7. Conditionals - Complex conditional
-8. Functions - Why we need functions
-9. Functions - Simple function
-10. Functions - Two functions
+8. Functions - Why we need functions <-- not sure
+9. Functions - Simple function <-- not sure
+10. Functions - Two functions <-- not sure
 11. Events - Simple event
 12. Events - Multiple events
 13. Free play
