@@ -25,20 +25,23 @@ nextStage(stage)
 resetStage
 ```
 ```
-setVariable([score|lives|var1|var2|var3|var4])To([0|1|2|3|4|5|6|7|8|9|10])
-increaseVariable([score|lives|var1|var2|var3|var4])
-decreaseVariable([score|lives|var1|var2|var3|var4])
+setVariable([score|lives|var1|var2|var3|var4|var5|var6}])To([0|1|2|3|4|5|6|7|8|9|10])
+increaseVariable([score|lives|var1|var2|var3|var4|var5|var6])
+decreaseVariable([score|lives|var1|var2|var3|var4|var5|var6])
 ```
 ```
 repeat([1time|2times|3times|4times|5times|6times|7times|8times|9times|10times|forever|random]) {}
+break
 ```
 ```
 if buttonPressed([a|b|up|down|left|right]) {}
 if numberOf([knight|archer|pawn|goblin])Is([0|1|2|3|4|5|6|7|8|9|10]) {}
-if variable([score|lives|var1|var2|var3|var4])Is([0|1|2|3|4|5|6|7|8|9|10]) {}
+if variable([score|lives|var1|var2|var3|var4|var5|var6])Is([0|1|2|3|4|5|6|7|8|9|10]) {}
+if <instance>.steppingOver([tile1|tile2]) {}
+if 
 ```
 ```
-spawn([knight|archer|pawn|goblin])Near(<object>)
+spawn([knight|archer|pawn|goblin])Near(<instance>)
 spawn([knight|archer|pawn|goblin])Near([topLeft|topCenter|topRight|centerLeft|center|centerRight|bottomLeft|bottomCenter|bottomRight])
 ```
 ```
@@ -46,12 +49,12 @@ wait([1sec|2sec|3sec|4sec|5sec|10sec|20sec|30sec|random])
 ```
 ```
 <instance>.move([up|down|left|right|random])
-<instance>.moveAwayFrom(<object>)
+<instance>.moveAwayFrom(<instance>)
 <instance>.moveAwayFrom([topLeft|topCenter|topRight|centerLeft|center|centerRight|bottomLeft|bottomCenter|bottomRight])
-<instance>.moveTowards(<object>)
+<instance>.moveTowards(<instance>)
 <instance>.moveTowards([topLeft|topCenter|topRight|centerLeft|center|centerRight|bottomLeft|bottomCenter|bottomRight])
 <instance>.attack
-<instance>.shoot(<object>)
+<instance>.shoot(<instance>)
 <instance>.shoot([up|down|left|right|random])
 <instance>.destroy
 ```
@@ -62,11 +65,11 @@ wait([1sec|2sec|3sec|4sec|5sec|10sec|20sec|30sec|random])
 random([knight|archer|pawn|goblin|character|wall|anything])
 first([knight|archer|pawn|goblin|character])
 last([knight|archer|pawn|goblin|character])
-next([knight|archer|pawn|goblin|character])After(<object>
-previous([knight|archer|pawn|goblin|character])After(<object>)
-closest([knight|archer|pawn|goblin|character])To(<object>)
+next([knight|archer|pawn|goblin|character])After(<instance>
+previous([knight|archer|pawn|goblin|character])After(<instance>)
+closest([knight|archer|pawn|goblin|character])To(<instance>)
 closest([knight|archer|pawn|goblin|character])To([topLeft|topCenter|topRight|centerLeft|center|centerRight|bottomLeft|bottomCenter|bottomRight])
-furthest([knight|archer|pawn|goblin|character])From(<object>)
+furthest([knight|archer|pawn|goblin|character])From(<instance>)
 furthest([knight|archer|pawn|goblin|character])From([topLeft|topCenter|topRight|centerLeft|center|centerRight|bottomLeft|bottomCenter|bottomRight])
 ```
 
@@ -96,3 +99,9 @@ sheep on attached by knight variable y changes
 sheep on stepped over boundary variable x changes
 if ship collides with goblin destroy the goblin and change y
 ```
+
+## Soccer
+
+## Pacman
+
+## Golf
