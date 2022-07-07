@@ -50,7 +50,9 @@ wait([1sec|2sec|3sec|4sec|5sec|10sec|20sec|30sec|random])
 <instance>.moveAwayFrom([topLeft|topCenter|topRight|centerLeft|center|centerRight|bottomLeft|bottomCenter|bottomRight])
 <instance>.moveTowards(<object>)
 <instance>.moveTowards([topLeft|topCenter|topRight|centerLeft|center|centerRight|bottomLeft|bottomCenter|bottomRight])
-<instance>.attack([forwards|backwards|up|down|left|right|random])
+<instance>.attack
+<instance>.shoot(<object>)
+<instance>.shoot([up|down|left|right|random])
 <instance>.destroy
 ```
 
@@ -60,6 +62,8 @@ wait([1sec|2sec|3sec|4sec|5sec|10sec|20sec|30sec|random])
 random([knight|archer|pawn|goblin|character|wall|anything])
 first([knight|archer|pawn|goblin|character])
 last([knight|archer|pawn|goblin|character])
+next([knight|archer|pawn|goblin|character])After(<object>
+previous([knight|archer|pawn|goblin|character])After(<object>)
 closest([knight|archer|pawn|goblin|character])To(<object>)
 closest([knight|archer|pawn|goblin|character])To([topLeft|topCenter|topRight|centerLeft|center|centerRight|bottomLeft|bottomCenter|bottomRight])
 furthest([knight|archer|pawn|goblin|character])From(<object>)
