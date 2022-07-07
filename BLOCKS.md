@@ -37,8 +37,8 @@ break
 if buttonPressed([a|b|up|down|left|right]) {}
 if numberOf([knight|archer|pawn|goblin])Is([0|1|2|3|4|5|6|7|8|9|10]) {}
 if variable([score|lives|var1|var2|var3|var4|var5|var6])Is([0|1|2|3|4|5|6|7|8|9|10]) {}
-if <instance>.steppingOver([tile1|tile2]) {}
-if 
+if <instance>.steppedOver([tile1|tile2]) {}
+if <instance>.near([knight|archer|pawn|goblin|character|wall|anything]) {}
 ```
 ```
 spawn([knight|archer|pawn|goblin])Near(<instance>)
